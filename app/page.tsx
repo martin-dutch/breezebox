@@ -4,6 +4,7 @@ import { FAQ } from 'components/landing/faq';
 import FeatureCards from 'components/landing/feature-cards';
 import Features from 'components/landing/features';
 import HeroHeader from 'components/landing/hero';
+import { PriceComparison } from 'components/landing/price-comparison';
 import Footer from 'components/layout/footer';
 import { Suspense } from 'react';
 
@@ -25,6 +26,7 @@ export default async function HomePage() {
         <HeroHeader />
         <FeatureCards />
         <Features />
+        <PriceComparison />
         <FAQ/>
         <Suspense>
           <Footer />
