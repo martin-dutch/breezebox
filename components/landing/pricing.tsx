@@ -1,5 +1,4 @@
 
-import { BillingForm } from "components/billing-form"
 import { Icons } from "components/icons"
 import { Alert, AlertDescription, AlertTitle } from "components/ui/alert"
 
@@ -46,12 +45,12 @@ export default async function BillingPage() {
             .
           </AlertDescription>
         </Alert>
-        <BillingForm
+        {/* <BillingForm
           subscriptionPlan={{
             ...subscriptionPlan,
             isCanceled,
           }}
-        />
+        /> */}
       </div>
     </div>
   )
