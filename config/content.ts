@@ -10,7 +10,7 @@ import { ContentSection, HeroHeader, PriceComparionRow, PriceComparison } from "
 export const heroHeader: HeroHeader = {
   header: `Landing pages made easy`,
   subheader: `Easy to setup. Customizable. Quick. Responsive.`,
-  image: `/hero-img.webp`,
+  image: `/aircon-light.png`,
 }
 
 export const priceComparisonText: PriceComparison = {

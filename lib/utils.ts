@@ -12,6 +12,14 @@ export const createUrl = (pathname: string, params: URLSearchParams | ReadonlyUR
 export const ensureStartsWith = (stringToCheck: string, startsWith: string) =>
   stringToCheck.startsWith(startsWith) ? stringToCheck : `${startsWith}${stringToCheck}`;
 
+  export function formatDate(input: string | number): string {
+    const date = new Date(input)
+    return date.toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    })
+  }
   
    
 export function cn(...inputs: ClassValue[]) {

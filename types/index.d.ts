@@ -26,3 +26,9 @@ export type SiteConfig = {
       features: string
     }
   }
+
+  export type UserSubscriptionPlan = SubscriptionPlan &
+  Pick<User, "stripeCustomerId" | "stripeSubscriptionId"> & {
+    stripeCurrentPeriodEnd: number
+    isPro: boolean
+  }

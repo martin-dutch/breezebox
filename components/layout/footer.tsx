@@ -49,7 +49,7 @@ export default async function Footer() {
           <p className="md:ml-auto">
             Crafted by{' '}
             <a href="https://vercel.com" className="text-black dark:text-white">
-              ▲ BreezeBox
+              email: info@breezebox.io
             </a>
           </p>
         </div>
