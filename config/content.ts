@@ -8,103 +8,107 @@ import { ContentSection, HeroHeader, PriceComparionRow, PriceComparison } from "
  ==================== */
 
 export const heroHeader: HeroHeader = {
-  header: `Landing pages made easy`,
-  subheader: `Easy to setup. Customizable. Quick. Responsive.`,
+  header: `Revolutionize Your Cooling Experience with BreezeBox`,
+  subheader: `Never Worry About Maintenance or Upgrades. Experience Next-Gen Air Conditioning with a Monthly Subscription. (£20/Month)`,
   image: `/aircon-light.png`,
 }
-
-export const priceComparisonText: PriceComparison = {
-    header: `Landing pages made easy`,
-    subheader: `Easy to setup. Customizable. Quick. Responsive.`,
+ 
+export const priceComparisonText: PriceComparison = { 
+    header: `Thinking about buying an airconditioner?`,
+    subheader: `See how much a BreezeBox subscription can save you! Price comparison from leading UK retailers.`,
     image: `/hero-img.webp`,
   }
 
   export const priceComparisonRows: PriceComparionRow[] = [
     {
-      invoice: "INV001",
-      paymentStatus: "Paid",
-      totalAmount: "$250.00",
+      invoice: "Initial Purchase/Rental ",
+      paymentStatus: "550",
+      totalAmount: "50",
       paymentMethod: "Credit Card",
     },
     {
-      invoice: "INV002",
-      paymentStatus: "Pending",
-      totalAmount: "$150.00",
+      invoice: "Month 1",
+      paymentStatus: "550",
+      totalAmount: "70",
       paymentMethod: "PayPal",
     },
     {
-      invoice: "INV003",
-      paymentStatus: "Unpaid",
-      totalAmount: "$350.00",
+      invoice: "Month 2",
+      paymentStatus: "550",
+      totalAmount: "90",
       paymentMethod: "Bank Transfer",
     },
     {
-      invoice: "INV004",
-      paymentStatus: "Paid",
-      totalAmount: "$450.00",
+      invoice: "Month 3",
+      paymentStatus: "550",
+      totalAmount: "110",
       paymentMethod: "Credit Card",
     },
     {
-      invoice: "INV005",
-      paymentStatus: "Paid",
-      totalAmount: "$550.00",
-      paymentMethod: "PayPal",
+      invoice: "Month 6",
+      paymentStatus: "550",
+      totalAmount: "130",
+      paymentMethod: "",
     },
     {
-      invoice: "INV006",
-      paymentStatus: "Pending",
-      totalAmount: "$200.00",
-      paymentMethod: "Bank Transfer",
-    },
-    {
-      invoice: "INV007",
-      paymentStatus: "Unpaid",
-      totalAmount: "$300.00",
-      paymentMethod: "Credit Card",
-    },
+      invoice: "Month 12",
+      paymentStatus: "550",
+      totalAmount: "150",
+      paymentMethod: "",
+    }
   ]
 
 export const featureCards: ContentSection = {
-  header: `Powered by`,
-  subheader: `What makes Next Landing possible`,
+  header: `Built for city flats`,
+  subheader: ``,
   content: [
     {
-      text: `Next.js`,
-      subtext: `The React Framework`,
-      image: `/next.svg`,
+      text: `Easy`,
+      subtext: `Quick & easy setup. Unbox it, plug it in, and connect it up!`,
+      image: ``,
     },
     {
-      text: `shadcn/ui`,
-      subtext: `Beautifully designed components`,
-      image: `/shadcn-ui.svg`,
+      text: `Portable`,
+      subtext: `Completely portable. Move from bedroom to home office, as you need.`,
+      image: ``,
     },
     {
-      text: `Vercel`,
-      subtext: `Develop. Preview. Ship.`,
-      image: `/vercel.svg`,
+      text: `Renters`,
+      subtext: `Ideal for renters - no installation required.`,
+      image: ``,
     },
-  ],
+    {
+        text: `Sustainable`,
+        subtext: `Eco-Friendly Technology that Lowers Your Carbon Footprint without Sacrificing Performance.`,
+        image: ``,
+      },
+  ], 
 }
 
 export const features: ContentSection = {
-  header: `Features`,
-  subheader: `Why use Next Landing?`,
-  image: `/features-img.webp`,
+  header: `How it works?`,
+  subheader: ``,
+  image: `/home-air-conditioner.png`,
   content: [
     {
-      text: `SEO Optimized`,
-      subtext: `Improved website visibility on search engines`,
+      text: `Effortless Ordering`,
+      subtext: `Order in 2 minutes`,
       image: `/seo.svg`,
     },
     {
-      text: `Highly Performant`,
-      subtext: `Fast loading times and smooth performance`,
+      text: `Fast Shipping`,
+      subtext: `Get your BreezeBox delivered to your door (Free Delivery)`,
       image: `/performant.svg`,
     },
     {
-      text: `Easy Customizability`,
-      subtext: `Change your content and layout with little effort`,
+      text: `Flexible Rental`,
+      subtext: `Keep the Air-Con as long as you like, we’ll collect it when you’re done`,
       image: `/customize.svg`,
     },
+    {
+        text: `You're in Control`,
+        subtext: `Flexibility to renew, cancel, or buy outright`,
+        image: `/customize.svg`,
+      },
   ],
 }

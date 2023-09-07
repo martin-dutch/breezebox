@@ -12,7 +12,7 @@ export default function FeatureCards() {
             {featureCards.header}
           </HeadingText>
         ) : null}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
           {featureCards.content.map((cards) => (
             <Card
               key={cards.text}

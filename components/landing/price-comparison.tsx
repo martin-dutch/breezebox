@@ -2,11 +2,10 @@ import { buttonVariants } from "components/ui/button"
 import {
     Table,
     TableBody,
-    TableCaption,
     TableCell,
     TableHead,
     TableHeader,
-    TableRow,
+    TableRow
 } from "components/ui/table"
 import { priceComparisonRows, priceComparisonText } from "config/content"
 import { cn } from "lib/utils"
@@ -27,7 +26,7 @@ import Link from "next/link"
           </h2>
         </div>
         <Link
-          href="https://github.com/redpangilinan/next-shadcn-landing"
+          href="/product/breezebox-the-first-one"
           target="_blank"
           className={`w-[10rem] ${cn(buttonVariants({ size: "lg" }))}`}
         >
@@ -36,13 +35,11 @@ import Link from "next/link"
       </div>
       <div className="flex-1">
       <Table >
-        <TableCaption>A list of your recent invoices.</TableCaption>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px]">Invoice</TableHead>
-            <TableHead>Status</TableHead>
-            <TableHead>Method</TableHead>
-            <TableHead className="text-right">Amount</TableHead>
+            <TableHead className="w-[100px]"></TableHead>
+            <TableHead>Buying an airconditioner</TableHead>
+            <TableHead>Renting an airconditioner</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -50,8 +47,7 @@ import Link from "next/link"
             <TableRow key={invoice.invoice}>
               <TableCell className="font-medium">{invoice.invoice}</TableCell>
               <TableCell>{invoice.paymentStatus}</TableCell>
-              <TableCell>{invoice.paymentMethod}</TableCell>
-              <TableCell className="text-right">{invoice.totalAmount}</TableCell>
+              <TableCell>{invoice.totalAmount}</TableCell>
             </TableRow>
           ))}
         </TableBody>

@@ -1,6 +1,5 @@
 import HeadingText from "components/heading-text"
 import { features } from "config/content"
-import Image from "next/image"
 
 export default function Features() {
   return (
@@ -11,21 +10,25 @@ export default function Features() {
         </HeadingText>
       ) : null}
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div
+          className="md:border"
+          style={{
+            backgroundImage: `url(${features.image})`,
+            backgroundRepeat: `no-repeat`,
+            backgroundSize: `cover`,
+          }}
+        ></div>
         <div className="grid grid-cols-1 gap-8">
-          {features.content.map((cards) => (
+          {features.content.map((cards, index) => (
             <div
               key={cards.text}
               className="flex flex-col items-center gap-2 text-center md:flex-row md:gap-8 md:text-left"
             >
               {cards.image !== "" ? (
                 <div className="flex">
-                  <Image
-                    src={cards.image}
-                    className="dark:brightness-0 dark:invert-[1]"
-                    width={100}
-                    height={100}
-                    alt="Card image"
-                  />
+                  <HeadingText className="text-center">
+                    {`${index + 1}.`}
+                </HeadingText>
                 </div>
               ) : (
                 <></>
@@ -41,14 +44,7 @@ export default function Features() {
             </div>
           ))}
         </div>
-        <div
-          className="md:border"
-          style={{
-            backgroundImage: `url(${features.image})`,
-            backgroundRepeat: `no-repeat`,
-            backgroundSize: `cover`,
-          }}
-        ></div>
+        
       </div>
     </section>
   )
