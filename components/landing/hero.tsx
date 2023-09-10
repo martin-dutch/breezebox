@@ -17,7 +17,7 @@ export default function HeroHeader() {
           </h2>
         </div>
         <Link
-          href="/product/breezebox"
+          href="/product/breezebox-monthly"
           target="_blank"
           className={`w-[10rem] ${cn(buttonVariants({ size: "lg" }))}`}
         >
