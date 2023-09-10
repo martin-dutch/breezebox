@@ -26,7 +26,7 @@ import Link from "next/link"
           </h2>
         </div>
         <Link
-          href="/product/breezebox-the-first-one"
+          href="/product/breezebox"
           target="_blank"
           className={`w-[10rem] ${cn(buttonVariants({ size: "lg" }))}`}
         >
